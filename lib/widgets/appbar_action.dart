@@ -5,11 +5,11 @@ import 'package:flutter/material.dart';
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar(
       {Key? key,
-      required this.action,
+       required this.action ,
       required this.icon,
       required this.quantity})
       : super(key: key);
-  final GestureTapCallback action;
+  final VoidCallback action;
   final IconData icon;
   final int quantity;
   @override

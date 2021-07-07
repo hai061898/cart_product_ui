@@ -3,7 +3,7 @@ import 'package:cart/routes/routes_name.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'routes/routes_page.dart';
+
 
 void main() {
   runApp(MyApp());
