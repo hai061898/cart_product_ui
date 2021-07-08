@@ -1,9 +1,10 @@
 
-import 'package:cart/data/json/category_json.dart';
+
 import 'package:cart/data/json/product_json.dart';
 import 'package:cart/data/models/cart_item.dart';
 import 'package:cart/data/models/category_model.dart';
 import 'package:cart/data/models/product_model.dart';
+import 'package:cart/utils/json.dart';
 
 import 'package:get/get.dart';
 import 'package:get/get_rx/src/rx_types/rx_types.dart';
@@ -18,10 +19,10 @@ class HomeController extends GetxController {
   }
 
   loadCategories() async {
-    // List<dynamic> dataCategories = await loadJson(
-    //   "assets/data/categories.json",
-    // );
-    category.addAll(categorydata
+    List<dynamic> dataCategories = await loadJson(
+      "assets/data/categories.json",
+    );
+    category.addAll(dataCategories
         .map<Category>((i) => Category(
               key: i["key"],
               name: i["name"],

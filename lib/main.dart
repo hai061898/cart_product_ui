@@ -1,5 +1,6 @@
 
 import 'package:cart/routes/routes_name.dart';
+import 'package:cart/routes/routes_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       initialRoute: RoutesName.HOME,
-      // getPages: RoutesPage.routes,
+      getPages: RoutesPage.routes,
      
     );
   }

@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
+import 'components/list_categories.dart';
+
 class HomePage extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class HomePage extends GetView<HomeController> {
         body: CustomScrollView(
             slivers: [
               SliverToBoxAdapter(
-                // child: ListCategories(),
+                child: ListCategories(),
               ),
               SliverPadding(
                 padding: EdgeInsets.only(

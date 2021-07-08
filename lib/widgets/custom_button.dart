@@ -2,7 +2,7 @@ import 'package:cart/utils/color.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton(
+  const CustomButton( 
       {Key? key, required this.action, this.label, required this.icon})
       : super(key: key);
   final VoidCallback action;
